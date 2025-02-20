@@ -61,3 +61,16 @@ GroupID,FirstName,LastName,Phone,Email
 1,John,Smith,5551234567,john@example.com
 1,Jane,Doe,5551234567,jane@example.com
 ```
+
+## References
+
+### Union-Find (Disjoint-Set Data Structure)
+The Union-Find data structure is used to efficiently manage connected components in our grouping logic. It supports:
+- **Path Compression**: Flattens the structure to optimize find operations.
+- **Union by Rank**: Merges smaller trees under larger ones for balance.
+
+For more details, refer to:
+- [Union-Find Data Structure Explanation (Medium)](https://medium.com/@zdf2424/the-most-underrated-data-structure-disjoint-sets-union-find-76cf635a2eff)
+- [Disjoint Set Union (Union Find) (Hackerearth)](https://www.hackerearth.com/practice/notes/disjoint-set-union-union-find/)
+- [Union-Find Algorithm (YouTube)](https://www.youtube.com/watch?v=HzdtdQVhCro)
+- [Union-Find Code (YouTube)](https://www.youtube.com/watch?v=KbFlZYCpONw)
