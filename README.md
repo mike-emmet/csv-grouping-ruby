@@ -2,9 +2,9 @@
 
 ## Overview
 This script processes CSV files to group rows representing the same person based on matching criteria:
-- **Same Email**: Groups rows with identical email addresses.
-- **Same Phone**: Groups rows with identical phone numbers.
-- **Same Email OR Phone**: Groups rows sharing either email or phone.
+- **same_email**: Groups rows with identical email addresses.
+- **same_phone**: Groups rows with identical phone numbers.
+- **same_email_or_phone**: Groups rows sharing either email or phone.
 
 Utilizes **Union-Find (Disjoint-Set)** for efficiency.
 
@@ -18,14 +18,14 @@ Utilizes **Union-Find (Disjoint-Set)** for efficiency.
 ## File Structure
 ```
 ruby-grouping/
-├── README.md          # Documentation
-├── main.rb            # Entry point
-├── lib/               # Contains core logic files
-│   ├── csv_processor.rb          # CSV handling logic
-│   ├── union_find.rb             # Union-Find implementation
-│   ├── data_normalization.rb     # Email & phone normalization
 ├── input/                        # Stores input CSV files
+├── lib/                          # Contains core logic files
+│   ├── csv_processor.rb          # CSV handling logic
+│   ├── data_normalization.rb     # Email & phone normalization
+│   ├── union_find.rb             # Union-Find implementation
 ├── output/                       # Stores generated output files (gitignored)
+├── main.rb                       # Entry point
+├── README.md                     # Documentation
 ```
 
 ## Installation
